@@ -502,7 +502,7 @@ code { font-family:'SF Mono','Fira Mono','Courier New',monospace; font-size:11px
       <div class="form-error" id="emailError">Please enter a valid email address.</div>
     </div>
     <button class="submit-btn" id="gateSubmitBtn" onclick="handleEmailSubmit()">
-      <span id="gateBtnText">Login to Watch Demos →</span>
+      <span id="gateBtnText">Login to Watch Demo →</span>
       <div class="gate-spinner" id="gateSpinner"></div>
     </button>
   </div>
@@ -538,7 +538,7 @@ code { font-family:'SF Mono','Fira Mono','Courier New',monospace; font-size:11px
       </div>
       <div class="video-wrapper">
         <iframe id="video1Frame" src="about:blank"
-          data-gdrive-id="1pI90Hl-H4sdLHsEXcr8HO0ko03vB7bGc"
+          data-gdrive-id="1Wz4HXKHqddA7kHSq6YBTeGv7l2osXQgg"
           allow="autoplay" allowfullscreen></iframe>
         <div class="video-placeholder" id="video1Placeholder">
           <div class="play-icon">▶</div>
@@ -560,7 +560,7 @@ code { font-family:'SF Mono','Fira Mono','Courier New',monospace; font-size:11px
       </div>
       <div class="video-wrapper">
         <iframe id="video2Frame" src="about:blank"
-          data-gdrive-id="1Wz4HXKHqddA7kHSq6YBTeGv7l2osXQgg"
+          data-gdrive-id="1pI90Hl-H4sdLHsEXcr8HO0ko03vB7bGc"
           allow="autoplay" allowfullscreen></iframe>
         <div class="video-placeholder" id="video2Placeholder">
           <div class="play-icon">▶</div>
@@ -1178,7 +1178,7 @@ function handleEmailSubmit() {
   // Send email notification, then proceed regardless of outcome
   sendLoginNotification(email).finally(() => {
     btn.disabled = false;
-    btnTxt.textContent = 'Login to Watch Demos →';
+    btnTxt.textContent = 'Login to Watch Demo →';
     spinner.style.display = 'none';
     showLoginPage();
   });
